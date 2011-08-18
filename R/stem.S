@@ -36,7 +36,7 @@ function(words, language = character(), warnTested = FALSE)
    }
  } 
    
- lens = nchar(words)
+ lens = nchar(words, "bytes")
 
    # Need to synchronize this with the C code, so ask it..
  lim = .Call("S_getMaxWordLength", PACKAGE = "Rstem")

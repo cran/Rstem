@@ -1,14 +1,10 @@
-91799f459eca574dd73759dd2a639755 *DESCRIPTION
+e9826d593fc399400ca9ebc0b4d779d6 *DESCRIPTION
 86ecbf2b2f913f5971296ef5bd7878d7 *NAMESPACE
 bc98afaba0b2f19093fad1316ced35ca *R/langs.R
-bffb7869623703b970e9324da649da54 *R/stem.S
-d0d96a9397a2d6c74a98edd40a396bdd *R/zzz.R
+380aec47de835cc620330f6fcdb84a24 *R/stem.S
 73ee9575809d071c855fd51b7fdd3767 *SPlus
 7372ef22d9c20a9ef207fea322632b7f *Todo.html
-8c7c9a929cdc06ff4c25e7f4c2862ea1 *Web/config.status
-071091a9d03001ddea4b8906eb619475 *Web/configure
-a1abf3a49e04c903c29cd5c32f64cab1 *Web/index.html
-6421c5b65598125b9cb1a1fdcdc9e2fd *Web/index.html.in
+c8272d331a273a03f153efa3d2d11eb6 *Web/index.html
 13c07498a48608ddd8577e8aaa3cf0a0 *inst/doc/stemming.tex
 c38cd3da08d8c7bc3a20f70ace51e990 *inst/scripts/README.html
 4a153ce005385d197caf41356547a9fd *inst/scripts/download

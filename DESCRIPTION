@@ -1,6 +1,6 @@
 Package: Rstem
 Project: Omegahat
-Version: 0.4-0
+Version: 0.4-1
 Title: Interface to Snowball implementation of Porter's word stemming
         algorithm.
 Description: An R interface to the C code that implements Porter's word
@@ -25,6 +25,6 @@ Note: This package is setup to support stemming for languages other
         the distribution.  Support for Unicode is needed in R.
 Copyright: Duncan Temple Lang, 2004.
 License: BSD
-Packaged: 2011-08-18 18:22:40 UTC; timjurka
+Packaged: 2011-08-18 21:28:45 UTC; duncan
 Repository: CRAN
-Date/Publication: 2011-08-18 19:57:05
+Date/Publication: 2011-08-19 05:25:59
