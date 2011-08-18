@@ -1,3 +1,9 @@
+getTestedLanguages =
+function()
+{
+  .TestedLanguages
+}
+
 wordStem =
   #
   # Do the stemming.
@@ -5,7 +11,7 @@ wordStem =
   #
   # Does this handle upper case? Yes.
   #
-function(words, language = character())
+function(words, language = character(), warnTested = FALSE)
 {
    # Check the language is okay.
  if(length(language)) {
@@ -17,8 +23,8 @@ function(words, language = character())
 
      language = langs[idx]
 
-     if(language != "english")
-       warning("Currently, only 'english' is tested. You will need support for UTF characters.")
+     if(warnTested && !(language %in% getTestedLanguages()))
+       warning("Currently, ", language, " is not tested. It may work, but you will need support for UTF characters.")
    } else {
 
       if(!is.character(language)) {

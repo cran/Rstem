@@ -1,12 +1,12 @@
 <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
 <html> <head>
 <link rel="stylesheet" href="../OmegaTech.css"/>
-<title>Rstem Package</title>
+<title>@PKG_NAME@ Package</title>
 </head>
 
 <body>
 <h1>Rstem Package</h1>
-<p align=right><a href="Rstem_0.3-1.tar.gz">Rstem_0.3-1.tar.gz</a> (15 May 2009)</p>
+<p align=right><a href="@TAR_FILE@">@TAR_FILE@</a> (@DATE@)</p>
 <p align=right><a href="stemming.pdf">Package document</a></p>
 
 

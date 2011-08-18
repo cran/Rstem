@@ -13,7 +13,7 @@
   
 }
 \usage{
-wordStem(words, language = character())
+wordStem(words, language = character(), warnTested = FALSE)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -27,7 +27,14 @@ wordStem(words, language = character())
     creating and closing a Snowball \code{SN\_env} environment
     and performing the stem (in that order).
     See the example below.
-   }
+  }
+  \item{warnTested}{an option to control whether a warning is issued
+    about languages which have not been explicitly tested as part of the
+    unit testing of the code.  For the most part, one can ignore these
+    warnings and so they are turned off. In the future, we might
+    consider controlling this with a global option, but for now
+    we suppress the warnings by default.
+  }
 }
 \details{
   This uses Dr. Martin Porter's stemming algorithm

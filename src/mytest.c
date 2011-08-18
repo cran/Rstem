@@ -66,14 +66,14 @@ S_stemWords(SEXP words, SEXP lens, SEXP language)
 	PROTECT(ans = NEW_CHARACTER(n));
 	for(i = 0; i < n; i++) {
                 /* Do we need to do this? We will when we have Unicode, etc. */
-		memcpy(buf, CHAR(VECTOR_ELT(words, i)), INTEGER_DATA(lens)[i]);
+		memcpy(buf, CHAR(STRING_ELT(words, i)), INTEGER_DATA(lens)[i]);
 		SN_set_current(env, INTEGER_DATA(lens)[i], buf);
 
 		(*stem)(env);
                 /* Put into the answer vector. */
 		memcpy(buf, env->p, env->l);
 		buf[env->l] = '\0';
-		SET_VECTOR_ELT(ans, i, COPY_TO_USER_STRING(buf));
+		SET_STRING_ELT(ans, i, COPY_TO_USER_STRING(buf));
 	}
 
          /* Clean up the Snowball environment, releasing the resources. */
@@ -111,7 +111,7 @@ S_getLanguages()
         n = sizeof(languages)/sizeof(languages[0]);
 	PROTECT(ans = NEW_CHARACTER(n));
 	for(i = 0; i < n; i++) {
-		SET_VECTOR_ELT(ans, i, COPY_TO_USER_STRING(languages[i].language));
+		SET_STRING_ELT(ans, i, COPY_TO_USER_STRING(languages[i].language));
 	}
 	UNPROTECT(1);
 	return(ans);
@@ -194,7 +194,7 @@ testDynCreate()
 void
 testDynClose(SN_env *env)
 {
-	return(english_close_env(env));
+	english_close_env(env);
 }
 
 int
